@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GIt hUB eSSues</title>
+  <!-- daisy ui and tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <!-- google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <!-- css add -->
+  <link rel="stylesheet" href="s.css">
+  <link rel="shortcut icon" href="./assets/github-logo.png" type="image/x-icon">
+
+</head>
+
+
+<body class="bg-gray-200 min-h-screen flex items-center justify-center">
+  <div class="mx-auto shadow-md bg-white w-[445px] h-[580px] p-10 rounded-lg ">
+    <div class="text-center">
+      <img class="mx-auto mb-4" src="./assets/github-logo.png" alt="">
+      <h2 class=" text-xl font-semibold text-[#1F2937]">GitHub Issues Tracker</h2>
+      <p class="text-sm text-gray-500 mb-6">Sign in to manage your issues</p>
+    </div>
+
+
+    <div class="mt-5 space-y-1">
+      <p class="text-[#1F2937] font-medium">User Name</p>
+      <input id="input-name" maxlength="5" type="text" placeholder="Enter Your Name"
+        class="w-full border rounded mt-1 p-2">
+      <p class="text-xs text-teal-800 mt-1">Default:admin</p>
+
+      <p class="text-[#1F2937] font-medium">Password</p>
+      <input type="password" id="input-password" maxlength="8" placeholder="Enter Your Password"
+        class="w-full border rounded mt-1 p-2">
+      <p class="text-xs text-teal-800 mt-1 mb-6">Default:admin123</p>
+      <button id="sign-btn" class="w-full text-white py-2 rounded-md btn btn-primary hover:bg-black">Sign Up</button>
+    </div>
+
+
+
+  </div>
+
+
+
+  <script src="./style.js"></script>
+</body>
+
+
+
+</html>
