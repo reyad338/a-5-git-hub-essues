@@ -15,7 +15,8 @@ document.getElementById('sign-btn').addEventListener('click', function () {
   console.log(adminPassword);
 
   if (userName == "admin" && adminPassword == "admin123") {
-    alert("Log in Successfull")
+    alert("Log in Successfull");
+    window.location.assign("/home.html")
   } else {
     alert("Log in Failed");
     return;
