@@ -33,7 +33,7 @@
       <p class="font-bold text-lg text-[#1F2937]">GitHub Issues Tracker</p>
     </div>
     <div class="flex items-center gap-1">
-      <input class="border rounded p-2" type="text" placeholder="Search issues....">
+      <input onkeyup="searchIssue(this.value)" class="border rounded p-2" type="text" placeholder="Search issues....">
       <button class="btn btn-primary">+ New Issue</button>
     </div>
   </div>
@@ -41,9 +41,9 @@
   <!-- tav btn -->
   <div class="w-11/12 mx-auto ">
     <div class="bg-white  p-5 rounded-lg mt-4">
-      <button id="tab-all" class="btn btn-outline btn-primary">All</button>
-      <button id="tab-open" class="btn btn-outline btn-primary">Open</button>
-      <button id="tab-closed" class="btn btn-outline btn-primary">Closed</button>
+      <button onclick="switchTab('all')" id="tab-all" class="btn btn-outline btn-primary">All</button>
+      <button onclick="switchTab('open')" id="tab-open" class="btn btn-outline btn-primary">Open</button>
+      <button onclick="switchTab('closed')" id="tab-closed" class="btn btn-outline btn-primary">Closed</button>
     </div>
   </div>
 
@@ -77,7 +77,7 @@
     <span class="loading loading-bars loading-xl"></span>
   </div>
   <!-- card grids -->
-  <div id="issue-container" class="max-w-7xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+  <div id="issue-container" class="max-w-7xl mx-auto mt-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
   </div>
 
   <!-- modal -->
@@ -86,6 +86,7 @@
     <div class="modal-box">
       <h3 id="modal-title" class="font-bold text-lg"></h3>
       <p id="modal-description" class="py-3"></p>
+      <div id="modal-info" class="space-y-2 text-sm"></div>
       <div class="modal-action">
         <form method="dialog">
           <button class="btn">Close</button>
